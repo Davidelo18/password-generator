@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         Password Generator
     </header>
-    <main>
-        <label for="passwordLength">Password Length</label>
-        <input type="range" name="" id="passwordLength">
-        <label for="bigLetters">Should contain big letters (ABCDEF...)</label>
-        <input type="checkbox" name="" id="bigLetters">
-        <label for="smallLetters">Should contain small letters (abcdef...)</label>
-        <input type="checkbox" name="" id="smallLetters">
-        <label for="numbers">Should contain numbers (012345...)</label>
-        <input type="checkbox" name="" id="numbers">
-        <label for="specialChars">Should contain special characters (!@#$%^...)</label>
-        <input type="checkbox" name="" id="specialChars">
-        <button id="generateBtn">Generate Password!</button>
+    <main class="main">
+        <h1 class="main__header">Choose some options that your password should contain (<strong style="color: #991b00">you have to choose at least 3</strong>)</h1>
+        <label for="passwordLength" class="main__label--passlength">Password Length</label>
+        <input type="range" class="main__range" name="" id="passwordLength">
+        <label for="bigLetters" class="main__label">Should contain big letters (ABCDEF...)</label>
+        <input type="checkbox" class="main__checkbox" name="" id="bigLetters">
+        <label for="smallLetters" class="main__label">Should contain small letters (abcdef...)</label>
+        <input type="checkbox" class="main__checkbox" name="" id="smallLetters">
+        <label for="numbers" class="main__label">Should contain numbers (012345...)</label>
+        <input type="checkbox" class="main__checkbox" name="" id="numbers">
+        <label for="specialChars" class="main__label">Should contain special characters (!@#$%^...)</label>
+        <input type="checkbox" class="main__checkbox" name="" id="specialChars">
+        <button id="generateBtn" class="main__btn--gen">Generate Password!</button>
 
-        <section id="userPassword">
-            <h1>Your ganerated password</h1>
+        <section id="userPassword" class="main__result">
+            <h1 class="main__header">Your ganerated password</h1>
             <input type="text" name="" id="" disabled placeholder="Your password will appear here">
-            <button id="copyBtn">Copy</button>
+            <button id="copyBtn" class="main__btn--copy">Copy</button>
         </section>
     </main>
 </body>

@@ -1,4 +1,92 @@
-$test: rgb(71, 148, 7);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$bg: #468966;
+$margin-x: 0 10%;
+$padd-y: 20px 0;
+
+%button {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 10px;
+    transition: background-color .3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: $test;
+    background-color: $bg;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: darken($bg, 10);
+    padding: $padd-y;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    border-bottom: 2px solid #BFBFBF;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: $padd-y;
+    margin: $margin-x;
+    margin-top: 5vh;
+
+    .main__header {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .main__label--passlength {
+        grid-column: 1 / -1; 
+    }
+
+    .main__range {
+        grid-column: 1 / -1;
+    }
+
+    .main__label {
+        grid-column: 1 / 4;
+    }
+
+    .main__checkbox {
+        grid-column: 4 / 5;
+    }
+
+    .main__btn--gen {
+        @extend %button;
+        grid-column: 2 / 4;
+        margin: 20px 0 10px 0;
+        background-color: darken($bg, 10);
+        &:hover {
+            cursor: pointer;
+            background-color: darken($bg, 15);
+        }
+    }
+
+    .main__result {
+        grid-column: 1 / 5;
+        margin-top: 10vh;
+
+        .main__btn--copy {
+            @extend %button;
+            background-color: #252525;
+            &:hover {
+                cursor: pointer;
+                background-color: lighten(#252525, 5);
+            }
+        }
+    }
 }
