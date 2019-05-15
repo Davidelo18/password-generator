@@ -1,0 +1,23 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidelo18/password-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidelo18/password-generator/issues"
+  },
+  "homepage": "https://github.com/Davidelo18/password-generator#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
