@@ -14,7 +14,7 @@
     <main class="main">
         <h1 class="main__header">Choose some options that your password should contain (<strong style="color: #991b00">you have to choose at least 3</strong>)</h1>
         <label for="passwordLength" class="main__label--passlength">Password Length</label>
-        <input type="range" class="main__range" name="" id="passwordLength">
+        <input type="range" class="main__range" min="5" max="64" name="" id="passwordLength">
         <label for="bigLetters" class="main__label">Should contain big letters (ABCDEF...)</label>
         <input type="checkbox" class="main__checkbox" name="" id="bigLetters">
         <label for="smallLetters" class="main__label">Should contain small letters (abcdef...)</label>
@@ -31,5 +31,6 @@
             <button id="copyBtn" class="main__btn--copy">Copy</button>
         </section>
     </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
